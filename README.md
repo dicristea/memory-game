@@ -1,22 +1,16 @@
-# memory-game
-
-A memory game created using ReactJS!
-
 ## Project: Memory Game
 
-A memory game created using React.js exploring the usage and implementation of APIs, ASYNC js, and useEffect() and other hooks. The project is inspired by The Odin Project curriculum.
+A memory game created using ReactJS! Here, I explore the usage and implementation of lifecycle methods using hooks and state. The project is inspired by The Odin Project curriculum.
 
 <a href="https://dicristea.github.io/memory-game/">🔗Live Preview</a>
 
 ## Features
 
-- Search city for current weather information and 5 day forecast
-- View date, time, weather, temperature, cloudiness, humidity, and 'feels like' temp. at specified location
-- See high/low and icon of weather information for 6 days
+- Scoreboard which counts the current score, and a "Best Score" showing the best score achieved thus far.
+- Image cards will be redisplayed in a random order anytime a user clicks one.
 
 ## Todos
 
-- dynamic search bar in React (show options when searching)
 - Make UI more responsive for phone screens
 
 ## What I learned
