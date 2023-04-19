@@ -13,6 +13,7 @@ const App = () => {
     setCount(count + 1);
   };
 
+  console.log(count);
   return (
     <div className="App-bg">
       <div className="App">

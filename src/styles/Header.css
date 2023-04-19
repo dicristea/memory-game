@@ -1,9 +1,13 @@
 .header {
   padding: 10px 0px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
   align-items: end;
-  border-bottom: 5px double var(--line);
+}
+
+.marines {
+  height: auto;
+  width: 150px;
 }
 
 .scoreboard {
@@ -14,7 +18,12 @@
   gap: 10px;
 }
 
+.horizontal {
+  flex: 1;
+  border-bottom: 3px double var(--line);
+}
+
 .vertical {
-  border-left: 5px double var(--line);
+  border-left: 3px double var(--line);
   height: 50px;
 }

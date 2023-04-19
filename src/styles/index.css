@@ -1,13 +1,13 @@
 :root {
-  --dark-accent: #0d4a6e;
-  --body-color: #e0dcedd3;
+  --dark-accent: #0f4d7d;
+  --body-color: #ffffff;
   --card-color: white;
-  --teal-accent: #086da7;
+  --accent: #1c79be;
   --red-accent: #bd3fac;
   --box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.412);
   --border-radius: 7px;
-  --link: #61dafb;
-  --line: rgb(49, 0, 128);
+  --link: #1c79be;
+  --line: #1c79be;
 }
 
 * {
@@ -39,6 +39,10 @@ h2,
 h3 {
   padding: 0;
   font-weight: 500;
+}
+
+h4 {
+  font-weight: 400;
 }
 
 a {

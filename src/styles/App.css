@@ -11,7 +11,7 @@
   min-width: 100%;
   min-height: 100vh;
   border-right: 5px double var(--line);
-  border-left: 5px double rgb(49, 0, 128);
+  border-left: 5px double var(--line);
   display: grid;
   grid-template-rows: 1.3fr 5fr 1fr;
   /* justify-content: center; */
