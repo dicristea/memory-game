@@ -2,7 +2,7 @@
   text-align: center;
   background-color: var(--body-color);
   min-width: 350px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding-left: 7vmin;
   padding-right: 7vmin;
 }
@@ -13,48 +13,10 @@
   border-right: 5px double var(--line);
   border-left: 5px double var(--line);
   display: grid;
-  grid-template-rows: 1.3fr 5fr 1fr;
-  /* justify-content: center; */
 }
 
 .App-logo {
   height: 80px;
   width: auto;
   pointer-events: none;
-}
-
-.card-holder {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 100px);
-}
-
-.card {
-  margin: 10px;
-  border-radius: var(--border-radius);
-  background-color: white;
-  height: 150px;
-
-  box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.228);
-}
-
-button {
-  border: none;
-  padding: 15px;
-  border-radius: var(--border-radius);
-  cursor: pointer;
-  height: 150px;
-  display: flex;
-  align-items: center;
-}
-
-button > img {
-  height: auto;
-}
-
-button:hover {
-  background-color: #b8c2d6;
-}
-
-button:active {
-  background-color: rgb(231, 231, 231);
 }

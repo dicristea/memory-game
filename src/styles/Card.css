@@ -1,0 +1,40 @@
+.card > button > img {
+  height: auto;
+  width: 100%;
+}
+
+.card-holder {
+  padding: 15px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  justify-content: center;
+  justify-items: center;
+  gap: 20px;
+}
+
+.card {
+  /* margin: 10px; */
+  border-radius: var(--border-radius);
+  background-color: white;
+  box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.228);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+button > img {
+  height: auto;
+}
+
+button:hover {
+  background-color: #b8c2d6;
+}
+
+button:active {
+  background-color: rgb(231, 231, 231);
+}

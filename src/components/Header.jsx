@@ -1,24 +1,33 @@
 import React from "react";
 import "../styles/Header.css";
-import marines from "../assets/MarineLogo.webp";
+import marinesLogo from "../assets/MarineLogo.webp";
+import worldGovLogo from "../assets/world-gov-logo.webp";
 
 const Header = ({ count }) => {
   return (
     <div className="header">
-      <img className="marines" src={marines} alt="" />
-      <div style={{ display: "flex", alignItems: "center" }}>
+      <div className="top-header">
+        <img className="marines" src={marinesLogo} alt="Logo of the Marines." />
+        <div className="scoreboard">
+          <h3 className="current-score">Score {count} </h3>
+          <div className="vertical"></div>
+          <h3 className="best-score">Best Score</h3>
+        </div>
+      </div>
+      <div className="title">
         <div className="horizontal" />
-        <h2 style={{ margin: "0 15px" }}>Job Board: Wanted Pirates</h2>
+        <h1 style={{ margin: "0 15px" }}>Job Board: Wanted Pirates</h1>
         <div className="horizontal" />
       </div>
-      <h4>
-        This is a memory game! Get points by clicking on a poster but don't
-        click on any more than once!
-      </h4>
-      <div className="scoreboard">
-        <div className="current-score">Current Score</div>
-        <div className="vertical"></div>
-        <div className="best-score">Best Score</div>
+      <div className="description">
+        <img src={worldGovLogo} alt="Logo of the World Government." />
+        <div>
+          <p>This is a memory game!</p>
+          <p>
+            Get points by clicking on a poster but don't click on any more than
+            once!
+          </p>
+        </div>
       </div>
     </div>
   );

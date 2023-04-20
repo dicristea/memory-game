@@ -1,11 +1,12 @@
 import React from "react";
-import pic from "../assets/GitHub-Mark-64px.png";
+import "../styles/Card.css";
+// import pic from "../assets/GitHub-Mark-64px.png";
 
-const Card = ({ incrementCount }) => {
+const Card = ({ name, incrementCount }) => {
   return (
     <div className="card">
       <button onClick={incrementCount}>
-        <img src={pic} alt="" />
+        <img src={name} alt="" />
       </button>
     </div>
   );

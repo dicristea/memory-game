@@ -1,10 +1,14 @@
 .header {
-  padding: 10px 0px;
+  padding: 20px 0px;
   display: grid;
-  /* grid-template-columns: repeat(2, 1fr); */
   align-items: end;
+  gap: 10px;
 }
 
+.top-header {
+  display: flex;
+  justify-content: space-around;
+}
 .marines {
   height: auto;
   width: 150px;
@@ -18,12 +22,30 @@
   gap: 10px;
 }
 
+.title {
+  display: flex;
+  align-items: center;
+}
+
 .horizontal {
   flex: 1;
-  border-bottom: 3px double var(--line);
+  border-bottom: 5px double var(--line);
 }
 
 .vertical {
   border-left: 3px double var(--line);
   height: 50px;
+}
+
+.description {
+  display: flex;
+  padding: 0px 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.description > img {
+  height: auto;
+  width: 70px;
 }
