@@ -1,15 +1,27 @@
 {
   "files": {
-    "main.css": "/memory-game/static/css/main.eb147700.css",
-    "main.js": "/memory-game/static/js/main.f92ae810.js",
+    "main.css": "/memory-game/static/css/main.224c3055.css",
+    "main.js": "/memory-game/static/js/main.fe48c482.js",
     "static/js/787.69b12325.chunk.js": "/memory-game/static/js/787.69b12325.chunk.js",
+    "static/media/Monkey_D._Luffy.png": "/memory-game/static/media/Monkey_D._Luffy.cea95bcf5a505aef6b91.png",
+    "static/media/Sanji.png": "/memory-game/static/media/Sanji.6fd112e5649eb620a255.png",
+    "static/media/Roronoa_Zoro.png": "/memory-game/static/media/Roronoa_Zoro.da7ff68e0314ff3b6c99.png",
+    "static/media/Nico_Robin.png": "/memory-game/static/media/Nico_Robin.7ac03724cdc0a1144815.png",
+    "static/media/Tony_Tony_Chopper.png": "/memory-game/static/media/Tony_Tony_Chopper.6c75b064182f62d5af72.png",
+    "static/media/Franky.png": "/memory-game/static/media/Franky.4556a78c7d0f1c7ee872.png",
+    "static/media/Brook.png": "/memory-game/static/media/Brook.8f03a836407d814c67c7.png",
+    "static/media/God_Usopp.png": "/memory-game/static/media/God_Usopp.2cc3ce6e46520654918c.png",
+    "static/media/Nami.png": "/memory-game/static/media/Nami.0ef7fdd7580e6aa42a57.png",
+    "static/media/Jinbe.jpg": "/memory-game/static/media/Jinbe.b3c24038983d6f6005d4.jpg",
+    "static/media/MarineLogo.webp": "/memory-game/static/media/MarineLogo.490f27675bad2f863a0c.webp",
+    "static/media/world-gov-logo.webp": "/memory-game/static/media/world-gov-logo.8f1d5cc5475036b69bcc.webp",
     "index.html": "/memory-game/index.html",
-    "main.eb147700.css.map": "/memory-game/static/css/main.eb147700.css.map",
-    "main.f92ae810.js.map": "/memory-game/static/js/main.f92ae810.js.map",
+    "main.224c3055.css.map": "/memory-game/static/css/main.224c3055.css.map",
+    "main.fe48c482.js.map": "/memory-game/static/js/main.fe48c482.js.map",
     "787.69b12325.chunk.js.map": "/memory-game/static/js/787.69b12325.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb147700.css",
-    "static/js/main.f92ae810.js"
+    "static/css/main.224c3055.css",
+    "static/js/main.fe48c482.js"
   ]
 }
