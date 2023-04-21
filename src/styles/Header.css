@@ -1,5 +1,6 @@
 .header {
-  padding: 20px 0px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   display: grid;
   align-items: end;
   gap: 10px;
@@ -8,23 +9,28 @@
 .top-header {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
 }
+
 .marines {
   height: auto;
   width: 150px;
 }
 
 .scoreboard {
-  display: grid;
-  grid-template-columns: repeat(3, min-content);
+  display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
 }
 
 .title {
   display: flex;
   align-items: center;
+}
+
+.title > h1 {
+  margin: "0 15px";
 }
 
 .horizontal {
@@ -34,7 +40,7 @@
 
 .vertical {
   border-left: 3px double var(--line);
-  height: 50px;
+  height: 80%;
 }
 
 .description {
@@ -48,4 +54,7 @@
 .description > img {
   height: auto;
   width: 70px;
+  cursor: pointer;
 }
+
+/* TRANSITION SPIN TO STRAW HAT  */

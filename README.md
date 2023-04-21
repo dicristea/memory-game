@@ -12,35 +12,27 @@ A memory game created using ReactJS! Here, I explore the usage and implementatio
 ## Todos
 
 - Make UI more responsive for phone screens
+- Posters should all be same size.
 
 ## What I learned
 
-- VERY limited by API (free access information only)
-- React: useEffect and other hooks
-  => https://blog.logrocket.com/modern-api-data-fetching-methods-react/
-- ES7 & Async JS (try/catch, Promise/then, async/await)
 - working with APIs (API keys, endpoints, error handling)
 - css media queries
   --> NEED TO ORGANIZE CSS BETTER!!
 
 ## Tools
 
-- OpenWeather API
 - React & ES7 JS
 - ESLint + Airbnb JavaScript Style Guide
 - Prettier Code Formatter
 
 ## Sources
 
-- Mountain Background:
-  Photo by <a href="https://unsplash.com/@stephenleo1982?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Stephen Leonardi</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+- Marine Logo:
+  Photo found on <a href="https://one-piece-dnd-by-rustage.fandom.com/wiki/Marines">One Piece DND Wiki</a>
 
-- Favicon/logo:
-  <a href="https://www.flaticon.com/free-icons/weather-app" title="weather app icons">Weather app icons created by Freepik - Flaticon</a>
-
-- Menu Icons:
-  <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by Febrian Hidayat - Flaticon</a>
-  <a href="https://fonts.google.com/icons">Google Icons</a>
+- World Government logo:
+  https://www.reddit.com/r/vexillology/comments/2e0w2l/flag_of_the_world_government_one_piece/
 
 --
 
