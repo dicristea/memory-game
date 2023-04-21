@@ -6,25 +6,18 @@ A memory game created using ReactJS! Here, I explore the usage and implementatio
 
 ## Features
 
-- Scoreboard which counts the current score, and a "Best Score" showing the best score achieved thus far.
-- Image cards will be redisplayed in a random order anytime a user clicks one.
+- Scoreboard shows your score of the current round, and a "Best Score" showing the best score achieved thus far.
+- Image cards are redisplayed in a random order anytime a user selects one.
 
 ## Todos
 
-- Make UI more responsive for phone screens
-- Posters should all be same size.
+- Make UI more responsive for phone screens --> css media queries
+- Use useContext rather than prop drilling
+- For Fun: Turn the world government into Luffy's Hat
 
 ## What I learned
 
-- working with APIs (API keys, endpoints, error handling)
-- css media queries
-  --> NEED TO ORGANIZE CSS BETTER!!
-
-## Tools
-
-- React & ES7 JS
-- ESLint + Airbnb JavaScript Style Guide
-- Prettier Code Formatter
+- working with state and understanding when I could use hooks (API keys, endpoints, error handling)
 
 ## Sources
 
@@ -32,7 +25,11 @@ A memory game created using ReactJS! Here, I explore the usage and implementatio
   Photo found on <a href="https://one-piece-dnd-by-rustage.fandom.com/wiki/Marines">One Piece DND Wiki</a>
 
 - World Government logo:
-  https://www.reddit.com/r/vexillology/comments/2e0w2l/flag_of_the_world_government_one_piece/
+  Photo found on <a href="https://www.reddit.com/r/vexillology/comments/2e0w2l/flag_of_the_world_government_one_piece/">this reddit post</a>
+
+- Wanted Pirate Posters:
+  Photos found on <a href="https://onepiece.fandom.com/wiki/Bounties/Gallery">One Piece Wiki</a>
+  - "Jinbe" wanted poster found <a href="https://kagetsuki.com/en/products/jinbe-wanted-poster?variant=43897094308118">here</a>.
 
 --
 

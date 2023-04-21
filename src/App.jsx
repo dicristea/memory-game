@@ -1,5 +1,5 @@
 // import logo from "./assets/logo.svg";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import "./styles/App.css";
 import Footer from "./components/Footer";
@@ -10,46 +10,44 @@ import fetchBestScore from "./utils/GetBestScore";
 
 const App = () => {
   const [count, setCount] = useState(0);
-  const [bestScore, setBestScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
+  const [bestScore, setBestScore] = useState(() => {
+    const storedScore = localStorage.getItem("Best Score");
+    const initialValue = JSON.parse(storedScore);
+    return initialValue || 0;
+  });
 
   const incrementCount = () => {
     setCount(count + 1);
   };
 
   const updateGameStatus = () => {
-    setGameOver(true);
+    setGameOver(!gameOver);
   };
 
   const resetGame = () => {
-    let bestScore = fetchBestScore("Best Score");
-    if (count > bestScore) {
+    let storedScore = fetchBestScore("Best Score");
+
+    if (count > storedScore) {
       setBestScore(count);
+      localStorage.setItem("Best Score", JSON.stringify(count));
+    } else {
+      setBestScore(storedScore);
     }
     setCount(0);
-    setGameOver(false);
+    updateGameStatus();
   };
 
-  console.log(fetchBestScore());
-
-  useEffect(() => {
-    localStorage.setItem("Best Score", JSON.stringify(count));
-  }, [count]);
-
-  // console.log(count);
   return (
     <div className="App-bg">
       <div className="App">
         <Header count={count} bestScore={bestScore} />
-        {gameOver && (
-          <div className="resetPopup">
-            "You've selected that poster already."
-            <button className="resetBtn" onClick={resetGame}>
-              Try Again?
-            </button>
-          </div>
-        )}
-        <Posters onClick={incrementCount} updateGameStatus={updateGameStatus} />
+        <Posters
+          onClick={incrementCount}
+          gameOver={gameOver}
+          resetGame={resetGame}
+          updateGameStatus={updateGameStatus}
+        />
         <Footer></Footer>
       </div>
     </div>
