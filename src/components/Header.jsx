@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/Header.css";
 import marinesLogo from "../assets/MarineLogo.webp";
-import worldGovLogo from "../assets/world-gov-logo.webp";
+import worldGovLogo from "../assets/world-gov-logo.png";
 
-const Header = ({ count, bestScore }) => {
+const Header = ({ count, bestScore, resetGame }) => {
   return (
     <div className="header">
       <div className="top-header">
@@ -32,6 +32,9 @@ const Header = ({ count, bestScore }) => {
             once!
           </p>
         </div>
+        <button className="reset-btn game-reset" onClick={() => resetGame()}>
+          Reset Game
+        </button>
       </div>
     </div>
   );

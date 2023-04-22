@@ -30,7 +30,7 @@
 }
 
 .title > h1 {
-  margin: "0 15px";
+  margin: 0 15px;
 }
 
 .horizontal {
@@ -47,14 +47,19 @@
   display: flex;
   padding: 0px 20px;
   align-items: center;
-  justify-content: center;
-  text-align: left;
+  justify-content: space-evenly;
+  gap: 15px;
 }
 
 .description > img {
-  height: auto;
-  width: 70px;
+  height: 60px;
+  width: auto;
   cursor: pointer;
+}
+
+.game-reset.reset-btn {
+  font-size: 0.7rem;
+  padding: 4px;
 }
 
 /* TRANSITION SPIN TO STRAW HAT  */

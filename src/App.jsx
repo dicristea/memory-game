@@ -1,5 +1,4 @@
-// import logo from "./assets/logo.svg";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./styles/App.css";
 import Footer from "./components/Footer";
@@ -7,10 +6,12 @@ import Header from "./components/Header";
 import Posters from "./components/Posters";
 
 import fetchBestScore from "./utils/GetBestScore";
+import PostersArray from "./utils/PostersArray";
 
 const App = () => {
   const [count, setCount] = useState(0);
   const [gameOver, setGameOver] = useState(false);
+  const [winner, setWinner] = useState(false);
   const [bestScore, setBestScore] = useState(() => {
     const storedScore = localStorage.getItem("Best Score");
     const initialValue = JSON.parse(storedScore);
@@ -25,7 +26,7 @@ const App = () => {
     setGameOver(!gameOver);
   };
 
-  const resetGame = () => {
+  const resetScore = () => {
     let storedScore = fetchBestScore("Best Score");
 
     if (count > storedScore) {
@@ -38,14 +39,28 @@ const App = () => {
     updateGameStatus();
   };
 
+  const resetGame = () => {
+    setWinner(!winner);
+    window.localStorage.clear();
+    window.location.reload(false);
+  };
+
+  useEffect(() => {
+    let posters = PostersArray();
+    if (count === posters.length) {
+      setWinner(true);
+    }
+  }, [count]);
+
   return (
     <div className="App-bg">
       <div className="App">
-        <Header count={count} bestScore={bestScore} />
+        <Header count={count} bestScore={bestScore} resetGame={resetGame} />
         <Posters
           onClick={incrementCount}
           gameOver={gameOver}
-          resetGame={resetGame}
+          resetScore={resetScore}
+          winner={winner}
           updateGameStatus={updateGameStatus}
         />
         <Footer></Footer>
