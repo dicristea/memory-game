@@ -29,7 +29,10 @@ A memory game created using ReactJS! Here, I explore the usage and implementatio
 
 - Wanted Pirate Posters:
   Photos found on <a href="https://onepiece.fandom.com/wiki/Bounties/Gallery">One Piece Wiki</a>
+
   - "Jinbe" wanted poster found <a href="https://kagetsuki.com/en/products/jinbe-wanted-poster?variant=43897094308118">here</a>.
+
+- <a href="https://www.flaticon.com/free-animated-icons/cash" title="cash animated icons">Cash animated icons created by Freepik - Flaticon</a>
 
 --
 
